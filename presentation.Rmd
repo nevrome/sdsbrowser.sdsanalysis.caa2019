@@ -1,7 +1,6 @@
 ---
 title: "sdsbrowser"
 subtitle: Shiny Application for visualisation and analysis of SDS stone artefact data
-author: "Clemens Schmid"
 date: "04/2019"
 institute: Institute of Pre- and Protohistoric Archaeology, Kiel University
 fontsize: 9pt
@@ -27,7 +26,10 @@ knitr::opts_chunk$set(echo = TRUE, cache = TRUE)
 
 ## TOC
 
-\textblockcolour{mDarkTeal}
+# SDS -- The System
 
-## Test
+# sdsanalysis -- Backend
 
+# sdsbrowser -- Webapp
+
+# End

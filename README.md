@@ -4,7 +4,7 @@ This paper ...
 
 ## Abstract
 
-<img align="right" src="figures/Logo_SDS_colour_300dpi.png" width = 450>
+<img align="right" src="figures/Logo_SDS_colour_300dpi.png" width = 300>
 
 SDS (Systematic and Digital documentation of Stone artefacts) is a recording system for stone artefacts proposed by Drafehn et al. 2008 [1]. It was created as an uniform coding and standardized listing system of the conventional attributes recorded at lithic inventories to enable quantitative and comparative analysis. The variable collection and data structure in SDS was compiled from several established documentation systems, most notably Zimmermann 1977 (see [1]).
 

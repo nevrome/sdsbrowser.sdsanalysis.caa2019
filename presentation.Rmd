@@ -55,15 +55,15 @@ knitr::opts_chunk$set(echo = TRUE, cache = TRUE)
 - Lack of data (and code) sharing
 - Lack of long term storing strategies
 
-\underline{Postive pressure:}
+\underline{Positive pressure:}
 
 - Funding and Journal requirements 
 - Open Science and Reproducible Research Movement
 
 \underline{Tools and enabling features:}
 
-- Data Storage Providers (e.g. ADS)
-- Data Journals
+- Data Storage Providers (e.g. *Archaeology Data Service*)
+- Data Journals (e.g. *Journal of Open Archaeology Data*)
 - Licensing 
 - new **Software, Platforms and Frameworks**
 

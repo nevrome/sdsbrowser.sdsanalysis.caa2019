@@ -26,7 +26,24 @@ knitr::opts_chunk$set(echo = TRUE, cache = TRUE)
 
 ## TOC
 
-# SDS -- The System
+\huge
+
+- Data preservation in Archaeology
+
+- The SDS System
+  - The System
+  - The Implementation
+  
+- Making SDS data accessible
+  - R & Shiny
+  - sdsanalysis
+  - sdsbrowser
+
+- Lessons for the future
+
+# SDS -- The System 
+
+# SDS -- The Implementation
 
 # sdsanalysis -- Backend
 

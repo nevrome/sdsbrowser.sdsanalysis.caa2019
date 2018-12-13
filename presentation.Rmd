@@ -28,10 +28,10 @@ knitr::opts_chunk$set(echo = TRUE, cache = TRUE)
 
 \huge
 
-- Data preservation in Archaeology
+- Data preservation and sharing in Archaeology
 
 - The SDS System
-  - The System
+  - The Idea
   - The Implementation
   
 - Making SDS data accessible
@@ -41,12 +41,44 @@ knitr::opts_chunk$set(echo = TRUE, cache = TRUE)
 
 - Lessons for the future
 
-# SDS -- The System 
+# Data preservation and sharing in Archaeology
 
-# SDS -- The Implementation
+## Context data preservation and sharing
 
-# sdsanalysis -- Backend
+\underline{Problems:}
 
-# sdsbrowser -- Webapp
+- Archaeology produces **Bad Data** (pretty shitty Big Data)
+  - Volume -- low end of the spectrum
+  - Variety -- a lot! And a significant **lack of metadata**
+  - (Velocity)
+  - Veracity -- highly different data quality
+- Lack of data (and code) sharing
+- Lack of long term storing strategies
 
-# End
+\underline{Postive pressure:}
+
+- Funding and Journal requirements 
+- Open Science and Reproducible Research Movement
+
+\underline{Tools and enabling features:}
+
+- Data Storage Providers (e.g. ADS)
+- Data Journals
+- Licensing 
+- new **Software, Platforms and Frameworks**
+
+# The SDS System 
+
+## SDS -- The Idea
+
+## SDS -- The Implementation
+
+# Making SDS data accessible
+
+## sdsanalysis -- Backend
+
+## sdsbrowser -- Webapp
+
+# Lessons for the future
+
+## Lessons

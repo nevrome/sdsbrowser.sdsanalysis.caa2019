@@ -15,6 +15,8 @@ editor_options:
 ---
 
 ```{r, echo = FALSE}
+library(magrittr)
+
 # https://stackoverflow.com/questions/25646333/code-chunk-font-size-in-rmarkdown-with-knitr-and-latex
 def.chunk.hook  <- knitr::knit_hooks$get("chunk")
 knitr::knit_hooks$set(chunk = function(x, options) {
@@ -74,6 +76,46 @@ knitr::opts_chunk$set(echo = TRUE, cache = TRUE)
 A. Drafehn/M. Bradtmöller/D. Mischka, SDS – Systematische und digitale Erfassung von Steinartefakten (Arbeitsstand SDS 8.05). Journal Of Neolithic Archaeology 10, 2008. [doi:10.12766/jna.2008.25](https://doi.org/10.12766/jna.2008.25)
 
 ## SDS -- The Idea
+
+\footnotesize
+
+```{r, echo = FALSE}
+" 'L', 'A', 0, 5, 2, 0, 0, 9, 1, 0, 8, 0, 2, 1, 0, 0, '...'
+  'L', 'A', 0, 5, 2, 0, 0, 9, 1, 0, 8, 0, 2, 1, 0, 0, '...' 
+  'L', 'A', 0, 5, 2, 0, 0, 9, 1, 0, 8, 0, 2, 1, 0, 0, '...'
+  'L', 'A', 0, 5, 2, 0, 0, 9, 1, 0, 8, 0, 2, 1, 0, 0, '...'
+  'L', 'A', 0, 5, 2, 0, 0, 9, 1, 0, 8, 0, 2, 1, 0, 0, '...'
+  'L', 'A', 0, 5, 2, 0, 0, 9, 1, 0, 8, 0, 2, 1, 0, 0, '...'
+  'L', 'A', 0, 5, 2, 0, 0, 9, 1, 0, 8, 0, 2, 1, 0, 0, '...'
+  'L', 'A', 0, 5, 2, 0, 0, 9, 1, 0, 8, 0, 2, 1, 0, 0, '...'
+  'L', 'A', 0, 5, 2, 0, 0, 9, 1, 0, 7, 0, 1, 1, 0, 0, '...'
+  'L', 'A', 0, 5, 2, 0, 0, 9, 1, 0, 7, 0, 1, 1, 0, 0, '...'
+  'L', 'A', 0, 5, 2, 0, 0, 9, 1, 0, 7, 0, 1, 1, 0, 0, '...'
+  'L', 'A', 0, 5, 2, 0, 0, 9, 1, 0, 7, 0, 1, 1, 0, 0, '...'
+  'L', 'A', 0, 5, 2, 0, 0, 9, 1, 0, 7, 0, 1, 1, 0, 0, '...'
+  'L', 'A', 0, 5, 2, 0, 0, 9, 1, 0, 7, 0, 1, 1, 0, 0, '...'
+  'L', 'A', 0, 5, 2, 0, 0, 9, 1, 0, 7, 0, 1, 1, 0, 0, '...'
+  'L', 'A', 0, 5, 2, 0, 0, 9, 1, 0, 7, 0, 1, 1, 0, 0, '...'
+  'L', 'A', 0, 5, 2, 0, 0, 9, 1, 0, 7, 0, 1, 1, 0, 0, '...'
+  '...', '...', '...', '...', '...', '...', '...', '...', '...', '...', '...', '...', '...', '...', '...', '...', '...' " %>%
+  read.csv(text = ., quote = "'") %>% 
+  knitr::kable(
+    format = "latex",
+    col.names = NULL
+  ) %>%
+  kableExtra::add_header_above(
+    c("digits: 4" = 4, "digits: 4" = 4, "digits: 5" = 5, "digits: 5" = 4)
+  ) %>%
+  kableExtra::add_header_above(
+    c("site" = 4, "year" = 4, "feature number" = 5, "excavation number" = 4)
+  ) %>%
+    kableExtra::add_header_above(
+    c("Variable 1" = 4, "Variable 2" = 4, "Variable 3" = 5, "Variable 4" = 4)
+  ) %>%
+  kableExtra::add_header_above(
+    c("Form sheet 1" = 17)
+  )
+```
 
 ## SDS -- The Idea
 

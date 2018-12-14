@@ -71,6 +71,14 @@ knitr::opts_chunk$set(echo = TRUE, cache = TRUE)
 
 ## SDS -- The Idea
 
+A. Drafehn/M. Bradtmöller/D. Mischka, SDS – Systematische und digitale Erfassung von Steinartefakten (Arbeitsstand SDS 8.05). Journal Of Neolithic Archaeology 10, 2008. [doi:10.12766/jna.2008.25](https://doi.org/10.12766/jna.2008.25)
+
+## SDS -- The Idea
+
+## SDS -- The Idea
+
+![SDS Formsheet organization. Drafehn/Bradtmöller/Mischka 2008, 3.](figures/sds_formsheet_organization.png)
+
 ## SDS -- The Implementation
 
 # Making SDS data accessible

@@ -123,6 +123,16 @@ A. Drafehn/M. Bradtmöller/D. Mischka, SDS – Systematische und digitale Erfass
 
 ## SDS -- The Implementation
 
+\underline{Practical solutions:}
+
+- Elimination of the digit separation
+
+## SDS -- The Implementation
+
+\underline{Consequences:}
+
+- 
+
 # Making SDS data accessible
 
 ## sdsanalysis -- Backend

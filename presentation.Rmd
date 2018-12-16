@@ -75,6 +75,17 @@ knitr::opts_chunk$set(echo = TRUE, cache = TRUE)
 
 A. Drafehn/M. Bradtmöller/D. Mischka, SDS – Systematische und digitale Erfassung von Steinartefakten (Arbeitsstand SDS 8.05). Journal Of Neolithic Archaeology 10, 2008. [doi:10.12766/jna.2008.25](https://doi.org/10.12766/jna.2008.25)
 
+\vspace{10px}
+
+> The following contribution offers a **recording system for stone artefacts**. This **compilation of existing systems** from the Upper Paleolithic to the Neolithic should serve as a starting point for **systematic and quantitative analysis** with a uniform **coding** and standardized listing system of the **conventional attributes recorded at lithic inventories**. Therewith a valuable basis for comparative analysis and digital exchange of the data should be guaranteed. 
+
+\underline{Features:}
+
+- Description of **individual** artefacts
+- **~200** variables (*color*, *weight*, *preservation*, and specific features by artefact type) with **>1300** predefined values/categories
+- Table layout with separate **form sheets**
+- Digit based **value encoding**: value "05" in variable *color* means "green"
+
 ## SDS -- The Idea
 
 \footnotesize
@@ -118,6 +129,8 @@ A. Drafehn/M. Bradtmöller/D. Mischka, SDS – Systematische und digitale Erfass
 ```
 
 ## SDS -- The Idea
+
+
 
 ![SDS Formsheet organization. Drafehn/Bradtmöller/Mischka 2008, 3.](figures/sds_formsheet_organization.png)
 

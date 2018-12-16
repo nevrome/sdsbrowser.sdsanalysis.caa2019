@@ -1,6 +1,6 @@
-# sdsbrowser -- an R Shiny Application for visualisation and analysis of SDS stone artefact data
+# sdsbrowser - an R Shiny Application for visualisation and analysis of SDS stone artefact data
 
-This paper ...
+This presentation is the result of a three month project organized by [Christoph Rinne](https://www.ufg.uni-kiel.de/en/staff-directory/scientific-collaborators/christoph-rinne) (@chrinne) and [Oliver Nakoinz](https://www.ufg.uni-kiel.de/en/staff-directory/professors/oliver-nakoinz) (@OliverNakoinz) and financed by the [Graduate School "Human Development in Landscapes"](http://www.gshdl.uni-kiel.de/). It was prepared for the session *R as an archaeological tool: current state and directions (vol. II)* at the [CAA2019](https://2019.caaconference.org/) conference in Kraków.
 
 ## Abstract
 

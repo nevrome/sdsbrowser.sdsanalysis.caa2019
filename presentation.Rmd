@@ -151,12 +151,12 @@ A. Drafehn/M. Bradtmöller/D. Mischka, SDS – Systematische und digitale Erfass
 
 ## General steps
 
-\underline{1. Data collection}
+\underline{1. Data collection:}
 
 - Reconstruct the SDS user history
 - Hunt for SDS data on hard drives and forgotten network storages
 
-\underline{2. Cleaning}
+\underline{2. Cleaning:}
 
 - Repair or document hacks to establish a modern SDS layout
 - Merge and harmonise form sheet tables
@@ -172,7 +172,7 @@ $$
 
 ## sdsanalysis -- Backend
 
-\underline{3. Data sharing}
+\underline{3. Data sharing:}
 
 - Host SDS datasets 
 - Provide functions to download them to R
@@ -182,7 +182,7 @@ sdsanalysis::get_available_datasets()
 sdsanalysis::get_single_artefact_data("Kuesterberg") -> Kuesterberg
 ```
 
-\underline{4. Increasing human readability}
+\underline{4. Increasing human readability:}
 
 - Provide functions to decode the alphanumerical value coding scheme (*hashes*)
 
@@ -196,7 +196,7 @@ R Package **sdsanalysis**: \url{https://github.com/Johanna-Mestorf-Academy/sdsan
 
 ## sdsbrowser -- Webapp
 
-\underline{5. Data presentation}
+\underline{5. Data presentation:}
 
 - Make SDS datasets directly explorable and downloadable
 
@@ -209,22 +209,23 @@ hosted at: \textbf{\url{http://sds.ufg.uni-kiel.de}}
 
 # Lessons for the future
 
-## Preventing Bad Data
+## Lessons
 
 \underline{Modesty:}
 
-- Collecting the information relevant for your research question is enough. 
-- Overly complicated databases and documentation systems are not useful.
+- Users will ignore/modify/slaughter overly complicated databases and documentation systems. **Keep it simple**
 
-\underline{Supervision and calibration:}
+\underline{Supervision:}
 
-- Data collection 
+- Data collection requires supervision and **technical guidelines**
 
-\underline{Long-term perspective:}
+\underline{Long term strategies:}
 
-- Publishing and licensing
+- Long term data sharing must be discussed **at the very beginning**, because people and data get lost quickly
 
-##  R & Shiny
+\underline{Scripting Languages:}
+
+- Scripting Languages and Web Frameworks likes R and Shiny provide **simple tools** to make **complicated data** more **visible and accessible**
 
 ##
 

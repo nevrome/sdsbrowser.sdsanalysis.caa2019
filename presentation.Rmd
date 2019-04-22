@@ -31,25 +31,16 @@ knitr::opts_chunk$set(echo = TRUE, cache = TRUE)
 \huge
 
 - Data preservation and sharing in Archaeology
-
 - The SDS System
-  - The Idea
-  - The Implementation
-  
-- Making SDS data accessible
-  - R & Shiny
-  - sdsanalysis
-  - sdsbrowser
-
+- Making SDS data accessible: \newline R package + Shiny Webapp
 - Lessons for the future
-
 
 
 # Data preservation and sharing in Archaeology
 
 ## Context data preservation and sharing
 
-\underline{Problems:}
+\underline{Problems!}
 
 - Archaeology produces **Bad Data** (pretty shitty Big Data)
   - Volume -- low end of the spectrum
@@ -59,17 +50,17 @@ knitr::opts_chunk$set(echo = TRUE, cache = TRUE)
 - Lack of data (and code) sharing
 - Lack of long term storing strategies
 
-\underline{Positive pressure:}
+\underline{Solutions?}
 
-- Funding and Journal requirements 
-- Open Science and Reproducible Research Movement
+- Positive pressure
+  - Funding and Journal requirements 
+  - Open Science and Reproducible Research Movement
 
-\underline{Tools and enabling features:}
-
-- Data Storage Providers (e.g. *Archaeology Data Service*)
-- Data Journals (e.g. *Journal of Open Archaeology Data*)
-- Licensing 
-- new **Software, Platforms and Frameworks**
+- Tools and enabling features
+  - Data Storage Providers (e.g. *Archaeology Data Service*)
+  - Data Journals (e.g. *Journal of Open Archaeology Data*)
+  - Licensing 
+  - new **Software Frameworks** that simplify good data sharing practices
 
 
 
@@ -140,18 +131,18 @@ A. Drafehn/M. Bradtmöller/D. Mischka, SDS – Systematische und digitale Erfass
 
 **10 years of use on 20+ sites by dozens of researchers and students with no common supervision: Cultural Evolution!**
 
-\underline{Practical solutions:}
+\underline{Practical solutions (aka \textit{Hacks}):}
 
-- Elimination of the digit separation, working with spreadsheet applications
+- Elimination of the digit separation: spreadsheet applications
 - Ignoring most variables
 - Adding (a few) new variables and (a few) new values
-- Creation of a multi/group artefact description form sheet with **~20** variables
+- Creation of a **multi/group artefact description form sheet** with ~20 variables
 
 \underline{Consequences:}
 
-- Inconsistent and incongruous file structures
-- Undocumented variables and values that only appear individual datasets
-- Absolute domination of the multi/group description system
+- Inconsistent and **incongruous file structures**
+- **Undocumented variables** and **values** that only appear in individual datasets
+- Absolute **domination** of the **multi/group description system**
 
 
 
@@ -161,6 +152,28 @@ A. Drafehn/M. Bradtmöller/D. Mischka, SDS – Systematische und digitale Erfass
 
 ## sdsbrowser -- Webapp
 
+
+
+
 # Lessons for the future
 
-## Lessons
+## Preventing Bad Data
+
+\underline{Modesty:}
+
+- Collecting the information relevant for your research question is enough. 
+- Overly complicated databases and documentation systems are not useful.
+
+\underline{Supervision and calibration:}
+
+- Data collection 
+
+\underline{Long-term perspective:}
+
+- Publishing and licensing
+
+##  R & Shiny
+
+##
+
+\titlepage

@@ -154,11 +154,11 @@ A. Drafehn/M. Bradtmöller/D. Mischka, SDS – Systematische und digitale Erfass
 \underline{1. Data collection}
 
 - Reconstruction of SDS user history
-- Searching data on hard drives and network storages
+- Hunt for SDS data on hard drives and forgotten network storages
 
 \underline{2. Cleaning}
 
-- Understanding and documenting hacks
+- Repair or documentation of hacks to establish a modern SDS layout
 - Merging and harmonising form sheet tables
 
 \Huge
@@ -172,13 +172,33 @@ $$
 
 ## sdsanalysis -- Backend
 
-3. Making the data human readable
+\underline{3. Data sharing}
 
-4. Data sharing
+- Host SDS datasets on a server of Kiel University
+- Providing functions to download to R
+
+```{r eval=FALSE}
+sdsanalysis::get_available_datasets()
+sdsanalysis::get_single_artefact_data("Kuesterberg") -> Kuesterberg
+```
+
+\underline{4. Increasing human readability}
+
+- Provide functions to decode the alphanumerical value coding scheme (*hashes*)
+
+```{r eval=FALSE}
+Kuesterberg %>% sdsanalysis::lookup_everything()
+```
+
+\usebeamertemplate*{title separator}
+
+R Package **sdsanalysis**: \url{https://github.com/Johanna-Mestorf-Academy/sdsanalysis} 
 
 ## sdsbrowser -- Webapp
 
 5. Data presentation
+
+\usebeamertemplate*{title separator}
 
 # Lessons for the future
 

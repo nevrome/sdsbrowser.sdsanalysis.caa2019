@@ -30,23 +30,24 @@ knitr::opts_chunk$set(echo = TRUE, cache = TRUE)
 
 \huge
 
-- Data preservation and sharing in Archaeology
+- Data acquisition and sharing in archaeology
 - The SDS System
 - Making SDS data accessible: \newline R package + Shiny Webapp
 - Lessons for the future
 
 
-# Data preservation and sharing in Archaeology
 
-## Context data preservation and sharing
+# Data acquisition and sharing
+
+## Bad hidden data
 
 \underline{Problems!}
 
 - Archaeology produces **Bad Data** (pretty shitty Big Data)
-  - Volume -- low end of the spectrum
-  - Variety -- a lot! And a significant **lack of metadata**
+  - **Volume** -- low end of the spectrum
+  - **Variety** -- a lot! and a significant lack of metadata
   - (Velocity)
-  - Veracity -- highly different data quality
+  - **Veracity** -- highly different data quality
 - Lack of data (and code) sharing
 - Lack of long term storing strategies
 
@@ -148,12 +149,36 @@ A. Drafehn/M. Bradtmöller/D. Mischka, SDS – Systematische und digitale Erfass
 
 # Making SDS data accessible
 
+## General steps
+
+\underline{1. Data collection}
+
+- Reconstruction of SDS user history
+- Searching data on hard drives and network storages
+
+\underline{2. Cleaning}
+
+- Understanding and documenting hacks
+- Merging and harmonising form sheet tables
+
+\Huge
+
+$$
+  \underbrace{1 + 2}_\text{Preparation} +\
+  \underbrace{3 + 4 + 5}_\text{R + Shiny}
+$$
+
+\normalsize
+
 ## sdsanalysis -- Backend
+
+3. Making the data human readable
+
+4. Data sharing
 
 ## sdsbrowser -- Webapp
 
-
-
+5. Data presentation
 
 # Lessons for the future
 

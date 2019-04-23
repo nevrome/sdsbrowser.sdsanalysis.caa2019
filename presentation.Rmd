@@ -1,6 +1,6 @@
 ---
 title: "sdsbrowser"
-subtitle: Shiny Application for visualisation and analysis of SDS stone artefact data
+subtitle: Making old data collected in the SDS stone artefact documentation system available and enjoyable
 date: "04/2019"
 institute: Institute of Pre- and Protohistoric Archaeology, Kiel University
 fontsize: 9pt
@@ -43,46 +43,46 @@ knitr::opts_chunk$set(echo = TRUE, cache = TRUE)
 
 \underline{Problems!}
 
-- Archaeology produces **Bad Data** (pretty shitty Big Data)
+- Archaeology often produces **Bad Data** (pretty shitty Big Data)
   - **Volume** -- low end of the spectrum
   - **Variety** -- a lot! and a significant lack of metadata
   - (Velocity)
   - **Veracity** -- highly different data quality
-- Lack of data (and code) sharing
-- Lack of long term storing strategies
+- Lack of data (and code) **sharing**
+- Lack of **long term storage** strategies
 
 \underline{Solutions?}
 
 - Positive pressure
-  - Funding and Journal requirements 
+  - Funding agencies and Journals require data sharing now
   - Open Science and Reproducible Research Movement
 
 - Tools and enabling features
   - Data Storage Providers (e.g. *Archaeology Data Service*)
   - Data Journals (e.g. *Journal of Open Archaeology Data*)
-  - Licensing 
+  - Data Licensing models 
   - new **Software Frameworks** that simplify good data sharing practices
 
 
 
 # The SDS System 
 
-## SDS -- The Idea
+## SDS -- Systematic and Digital Documentation of Stone Artefacts
 
 A. Drafehn/M. Bradtmöller/D. Mischka, SDS – Systematische und digitale Erfassung von Steinartefakten (Arbeitsstand SDS 8.05). Journal Of Neolithic Archaeology 10, 2008. [doi:10.12766/jna.2008.25](https://doi.org/10.12766/jna.2008.25)
 
 \vspace{10px}
 
-> The following contribution offers a **recording system for stone artefacts**. This **compilation of existing systems** from the Upper Paleolithic to the Neolithic should serve as a starting point for **systematic and quantitative analysis** with a uniform **coding** and standardized listing system of the **conventional attributes recorded at lithic inventories**. Therewith a valuable basis for comparative analysis and digital exchange of the data should be guaranteed. 
+> The following contribution offers a **recording system for stone artefacts**. This **compilation of existing systems** from the Upper Paleolithic to the Neolithic should serve as a starting point for **systematic and quantitative analysis** with a **uniform coding** and standardized listing system of the conventional attributes recorded at lithic inventories. Therewith a valuable basis for **comparative analysis and digital exchange** of the data should be guaranteed. 
 
 \underline{Features:}
 
 - Description of **individual** artefacts
-- **~200** variables (*color*, *weight*, *preservation*, and specific features by artefact type) with **>1300** predefined values/categories
+- **~200** variables (*color*, *weight*, *preservation*, *measurements*) with **>1300** predefined values/categories
 - Table layout with separate **form sheets**
-- Digit based **value encoding**: value "05" in variable *color* means "green"
+- Digit based **value encoding**
 
-## SDS -- The Idea
+## SDS -- A form sheet
 
 \footnotesize
 
@@ -124,26 +124,25 @@ A. Drafehn/M. Bradtmöller/D. Mischka, SDS – Systematische und digitale Erfass
   )
 ```
 
-## SDS -- The Idea
+## SDS -- Hierarchy of form sheets
 
-![SDS Formsheet organization. Drafehn/Bradtmöller/Mischka 2008, 3.](figures/sds_formsheet_organization.png)
+![SDS Form sheet organization. FB = Formblatt = Form sheet. Drafehn/Bradtmöller/Mischka 2008, 3.](figures/sds_formsheet_organization.png)
 
-## SDS -- The Implementation
+## SDS -- The actual implementation
 
 **10 years of use on 20+ sites by dozens of researchers and students with no common supervision: Cultural Evolution!**
 
 \underline{Practical solutions (aka \textit{Hacks}):}
 
-- Elimination of the digit separation: spreadsheet applications
-- Ignoring most variables
-- Adding (a few) new variables and (a few) new values
-- Creation of a **multi/group artefact description form sheet** with ~20 variables
+- Elimination of the **digit separation**
+- **Ignoring** most variables but **adding** new variables and values
+- Creation of a **multi artefact description form sheet** with only ~20 variables
 
 \underline{Consequences:}
 
 - Inconsistent and **incongruous file structures**
 - **Undocumented variables** and **values** that only appear in individual datasets
-- Absolute **domination** of the **multi/group description system**
+- Absolute **domination** of the **multi description system**
 
 
 
@@ -153,13 +152,13 @@ A. Drafehn/M. Bradtmöller/D. Mischka, SDS – Systematische und digitale Erfass
 
 \underline{1. Data collection:}
 
-- Reconstruct the SDS user history
-- Hunt for SDS data on hard drives and forgotten network storages
+- Reconstruct the **SDS user history**
+- **Hunt for SDS data** on hard drives and forgotten network storages
 
 \underline{2. Cleaning:}
 
-- Repair or document hacks to establish a modern SDS layout
-- Merge and harmonise form sheet tables
+- **Repair or document hacks** to establish a modern SDS layout
+- **Merge form sheet tables**
 
 \Huge
 
@@ -174,8 +173,8 @@ $$
 
 \underline{3. Data sharing:}
 
-- Host SDS datasets 
-- Provide functions to download them to R
+- **Host SDS datasets** 
+- Provide functions to **download them to R**
 
 ```{r eval=FALSE}
 sdsanalysis::get_available_datasets()
@@ -184,7 +183,7 @@ sdsanalysis::get_single_artefact_data("Kuesterberg") -> Kuesterberg
 
 \underline{4. Increasing human readability:}
 
-- Provide functions to decode the alphanumerical value coding scheme (*hashes*)
+- Provide functions to **decode the alphanumerical value coding scheme** (*hashes*)
 
 ```{r eval=FALSE}
 Kuesterberg %>% sdsanalysis::lookup_everything()
@@ -198,7 +197,7 @@ R Package **sdsanalysis**: \url{https://github.com/Johanna-Mestorf-Academy/sdsan
 
 \underline{5. Data presentation:}
 
-- Make SDS datasets directly explorable and downloadable
+- Make SDS datasets directly explorable and downloadable **online**
 
 ![](figures/sds_screenshot.png)
 
@@ -225,7 +224,7 @@ hosted at: \textbf{\url{http://sds.ufg.uni-kiel.de}}
 
 \underline{Scripting Languages:}
 
-- Scripting Languages and Web Frameworks likes R and Shiny provide **simple tools** to make **complicated data** more **visible and accessible**
+- Scripting Languages and Web Frameworks like R and Shiny provide **simple tools** to make **complicated data** more **visible and accessible**
 
 ##
 

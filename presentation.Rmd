@@ -80,7 +80,7 @@ A. Drafehn/M. Bradtmöller/D. Mischka, SDS – Systematische und digitale Erfass
 - Description of **individual** artefacts
 - **~200** variables (*color*, *weight*, *preservation*, *measurements*) with **>1300** predefined values/categories
 - Table layout with separate **form sheets**
-- Digit based **value encoding**
+- Digit based **value encoding**: 04 -> "green"
 
 ## SDS -- A form sheet
 
@@ -173,7 +173,7 @@ $$
 
 \underline{3. Data sharing:}
 
-- **Host SDS datasets** 
+- **Host SDS datasets**: JMA Data Exchange Platform
 - Provide functions to **download them to R**
 
 ```{r eval=FALSE}
@@ -183,7 +183,7 @@ sdsanalysis::get_single_artefact_data("Kuesterberg") -> Kuesterberg
 
 \underline{4. Increasing human readability:}
 
-- Provide functions to **decode the alphanumerical value coding scheme** (*hashes*)
+- Provide functions to **decode the alphanumerical value coding scheme** (*hashes*)p
 
 ```{r eval=FALSE}
 Kuesterberg %>% sdsanalysis::lookup_everything()
